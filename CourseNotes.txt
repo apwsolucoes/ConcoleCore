@@ -1,0 +1,36 @@
+https://www.udemy.com/angular-dotnetcore-efcore/learn/lecture/13247664#questions
+
+Help
+> dotnet new -h
+
+Novas camadas
+> dotnet new classlib -n GameTOP.Lib
+
+Criar solution
+> dotnet new sln -n GameTOP
+
+Add Referencias
+> dotnet add GameTOP/GameTOP.csproj reference GameTOP.Lib/GameTOP.Lib.csproj
+A referência '..\GameTOP.Lib\GameTOP.Lib.csproj' foi adicionada ao projeto.
+
+Add Project in solution
+> dotnet sln GameTOP.sln add GameTOP/GameTOP.csproj GameTOP.Lib/GameTOP.Lib.csproj
+O projeto 'GameTOP\GameTOP.csproj' foi adicionado à solução.
+O projeto 'GameTOP.Lib\GameTOP.Lib.csproj' foi adicionado à solução.
+
+> dotnet add GameTOP/GameTOP.csproj reference GameTOP.Interface/GameTOP.Interface.csproj
+A referência '..\GameTOP.Interface\GameTOP.Interface.csproj' foi adicionada ao projeto.
+
+> dotnet sln GameTOP.sln add GameTOP.Interface/GameTOP.Interface.csproj
+O projeto 'GameTOP.Interface\GameTOP.Interface.csproj' foi adicionado à solução.
+
+>dotnet add GameTOP.Lib/GameTOP.Lib.csproj reference GameTOP.Interface/GameTOP.Interface.csproj
+A referência '..\GameTOP.Interface\GameTOP.Interface.csproj' foi adicionada ao projeto.
+
+> dotnet run --project GameTOP/GameTOP.csproj
+
+#Video  11 - Debug
+dentro da pasta do project dotnet watch run
+
+#Video  12 - Git
+> git init
